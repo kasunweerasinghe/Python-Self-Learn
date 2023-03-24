@@ -19,4 +19,8 @@ password = ""
 for char in range(1, nr_letters):
     password += random.choice(letters)
 
+# for get random symbols
+for char in range(1, nr_symbols):
+    password += random.choice(symbols)
+
 print(password)
