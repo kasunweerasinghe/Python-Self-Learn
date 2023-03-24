@@ -39,3 +39,17 @@ print(game_image[user_choice])
 computer_choice = random.randint(0, 2)
 print("Computer Choose")
 print(game_image[computer_choice])
+
+# logic to find who won
+if user_choice >= 3 or user_choice < 0:
+    print("Wrong Input ): ")
+elif user_choice == 0 and computer_choice == 2:
+    print("You Win!! (: ")
+elif computer_choice == 0 and user_choice == 2:
+    print("You Loose ): ")
+elif computer_choice > user_choice:
+      print("You Loose ): ")
+elif user_choice > computer_choice:
+      print("You Win!! (: ")
+elif user_choice == computer_choice:
+      print("Draw..")
